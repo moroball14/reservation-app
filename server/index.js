@@ -1,4 +1,12 @@
-const express = require('express')
+const express = require('express');
+const mongoose = require('mongoose');
+const config = require('./config/dev')
+
+mongoose.connect(config.DB_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
 
 const app = express()
 
