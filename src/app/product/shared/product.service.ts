@@ -11,7 +11,7 @@ export class ProductService {
 
   getProducts(): Observable<any>{
     // return products
-    return this.http.get('http://localhost:3001/api/v1/products')
+    return this.http.get('/api/v1/products')
   }
 
   getProductById(productId: number){
